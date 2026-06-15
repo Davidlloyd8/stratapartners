@@ -1478,3 +1478,185 @@ div.left-box {
         width: 400px;
     }
 }
+
+
+@media (max-width: 370px) {
+    #content {
+        margin-left: 0;
+    }
+    
+    .long-p {
+        font-size: 17px;
+    }
+    .why {
+        font-size: 30px;
+    }
+
+    .textt {
+        font-size: 16px;
+        height: 50px;
+    }
+
+    #content,
+    #inner,
+    div.row-1,
+    div.row-2,
+    div.row-3,
+    div.row-4 {
+        width: 330px;
+    }
+
+    div.row-1,
+    div.row-2,
+    div.row-3,
+    div.row-4 {
+        margin-left: 0;
+    }
+
+    .grouped {
+        height: 380px;
+        margin-left: -20px;
+    }
+
+    .img1 {
+        left: 170px;
+    }
+
+    .trusted {
+        font-size: 16px;
+    }
+
+    div.row-1 div.l-box .high2 {
+        margin-left: 100px;
+    }
+
+    div.second-line .one {
+        height: 150px;
+    }
+
+    div.second-line .two {
+        height: 190px;
+    }
+
+    div.row-2 {
+        margin-top: 0;
+    }
+
+    div.row-3 {
+        height: auto;
+    }
+
+    div.down {
+        height: auto;
+    }
+
+    .pic {
+        width: 300px;
+        margin-top: 400px;
+    }
+
+    div.left-box,
+    div.high,
+    .low-p,
+    .faq-p,
+    div.upper,
+    div.lower,
+    div.up,
+    .why,
+    .textt,
+    .right,
+    div.r-box,
+    div.s-line,
+    .grouped,
+    div.second-line .one,
+    div.second-line .two {
+        width: 330px;
+    }
+
+    div.row-3 .left,
+    div.inn,
+    div.in2,
+    .r-grouped,
+    div.f-line,
+    h3.strat,
+    #text1,
+    #text2,
+    div.l-box {
+        width: 330px;
+    }
+
+    div.upp,
+    div.down,
+    div.l,
+    div.r {
+        width: 330px;
+    }
+
+    div.s-line {
+        height: 350px;
+    }
+
+    #text1 {
+        height: 200px;
+    }
+
+    #text2 {
+        height: 180px;
+    }
+
+    .p {
+        width: 300px;
+    }
+
+    .r-grouped {
+        margin-top: 150px;
+        height: 320px;
+    }
+
+    .r-grouped .image1 {
+        top: 2310px;
+    }
+
+    .pp {
+        width: 320px;
+        height: 120px;
+    }
+
+    div.upp,
+    div.l {
+        height: 310px;
+    }
+
+    .p {
+        height: 120px;
+    }
+
+    .low-p {
+        font-size: 16px;
+        height: 50px;
+        margin-left: 0;
+        width: 300px;
+    }
+
+    div.row-4 {
+        margin-top: 100px;
+    }
+
+    .high {
+        padding-left: 0;
+    }
+
+        div.left-box .high2 {
+        margin-left: 100px;
+    }
+
+    .faq-p {
+        font-size: 20px;
+        padding-left: 0;
+        width: 300px;
+    }
+
+    div.faq-container {
+        width: 340px;
+    }
+}
