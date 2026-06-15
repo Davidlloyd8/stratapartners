@@ -69,7 +69,7 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .header-content {
@@ -129,24 +129,35 @@
 }
 
 /* CARDS */
-.hover-card {
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* CARD BASE */
+.team-card {
   position: relative;
   overflow: hidden;
   border-radius: 15px;
   cursor: pointer;
+  margin: 10px;
 }
 
-.hover-card img {
+.team-card img {
   width: 100%;
-  height: 300px;
+  height: 350px;
   object-fit: cover;
   transition: 0.5s;
 }
 
-.hover-card:hover img {
+.team-card:hover img {
   transform: scale(1.1);
 }
-
 /* OVERLAY */
 .overlay {
   position: absolute;
@@ -161,7 +172,7 @@
   transition: 0.4s;
 }
 
-.hover-card:hover .overlay {
+.team-card:hover .overlay {
   opacity: 1;
 }
 
@@ -175,8 +186,10 @@
   line-height: 1.6;
   font-size: 14px;
 }
+
+/* FAQ Section */
 .faq-section {
-    background: off-white;
+  background: off-white;
 }
 /* Accordion container */
 .custom-accordion .accordion-item {
@@ -184,7 +197,7 @@
   border-radius: 16px;
   margin-bottom: 14px;
   background: #fff;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
   overflow: hidden;
 }
 
@@ -221,7 +234,7 @@
 /* Plus / minus lines */
 .icon::before,
 .icon::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 12px;
   height: 2px;
@@ -267,5 +280,16 @@
 
   .carousel-buttons {
     margin-top: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .team-card {
+    min-width: 23%; /* 4 cards */
+  }
+}
+
+@media (max-width: 991px) {
+  .team-card {
+    min-width: 94%; /* 1 card */
   }
 }

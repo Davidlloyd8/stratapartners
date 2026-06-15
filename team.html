@@ -41,7 +41,11 @@
 
         <!-- buttons -->
         <div class="d-flex btn-group-custom mt-5">
-          <button class="btn btn-primary-custom">Contact us</button>
+          <button class="btn btn-primary-custom" role="link">
+            <a href="contact.html" style="text-decoration: none; color: white"
+              >Contact us</a
+            >
+          </button>
         </div>
       </div>
     </section>
@@ -69,8 +73,7 @@
             <button
               class="custom-btn"
               type="button"
-              data-bs-target="#projectCarousel"
-              data-bs-slide="prev"
+              id="prevBtn"
             >
               <i class="bi bi-arrow-left"></i>
             </button>
@@ -78,8 +81,7 @@
             <button
               class="custom-btn"
               type="button"
-              data-bs-target="#projectCarousel"
-              data-bs-slide="next"
+              id="nextBtn"
             >
               <i class="bi bi-arrow-right"></i>
             </button>
@@ -87,146 +89,115 @@
         </div>
 
         <!-- CAROUSEL -->
-        <div id="projectCarousel" class="carousel slide">
-          <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-              <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
-                  <div class="hover-card">
-                    <img src="images/ope.jpeg" alt="" />
-
-                    <div class="overlay">
-                      <h4>Ope Olatinwo</h4>
-                      <p>Managing Partner of Strata Partners</p>
-                      <div class="social-icons mt-3">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                  <div class="hover-card">
-                    <img src="images/deji.jpeg" alt="" />
-
-                    <div class="overlay">
-                      <h4>Deji Dalumo Esq</h4>
-                      <div class="social-icons mt-3">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                  <div class="hover-card">
-                    <img src="images/deborah.jpg" alt="" />
-
-                    <div class="overlay">
-                      <h4>Deborah Lafuah-James</h4>
-                      <p>Senior Associate</p>
-                      <div class="social-icons mt-3">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                  <div class="hover-card">
-                    <img src="images/adesina.png" alt="" />
-
-                    <div class="overlay">
-                      <h4>Adesina M. Mustapha Esq.</h4>
-                      <div class="social-icons mt-3">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                      </div>
-                    </div>
-                  </div>
+        <div class="carousel-wrapper">
+          <div class="carousel-track" id="carouselTrack">
+            <!-- CARD -->
+            <div class="team-card">
+              <img src="images/ope.jpeg" />
+              <div class="overlay">
+                <h4>Ope Olatinwo</h4>
+                <p>Managing Partner of Strata Partners</p>
+                <div class="social-icons mt-3">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
 
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-              <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
-                  <div class="hover-card">
-                    <img src="images/moyosola.jpg" alt="" />
-
-                    <div class="overlay">
-                      <h4>Moyosola Fajana</h4>
-                      <p>Associate</p>
-                      <div class="social-icons mt-3">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                      </div>
-                    </div>
-                  </div>
+            <div class="team-card">
+              <img src="images/deji.jpeg" />
+              <div class="overlay">
+                <h4>Deji Dalumo Esq</h4>
+                <div class="social-icons mt-3">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
+              </div>
+            </div>
 
-                <div class="col-lg-3 col-md-6">
-                  <div class="hover-card">
-                    <img src="images/qayyum.jpg" alt="" />
-
-                    <div class="overlay">
-                      <h4>Qayyum Abdulsalam</h4>
-                      <p>Associate</p>
-                      <div class="social-icons mt-3">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                      </div>
-                    </div>
-                  </div>
+            <div class="team-card">
+              <img src="images/deborah.jpg" />
+              <div class="overlay">
+                <h4>Deborah Lafuah-James</h4>
+                <p>Senior Associate</p>
+                <div class="social-icons mt-3">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
+              </div>
+            </div>
 
-                <div class="col-lg-3 col-md-6">
-                  <div class="hover-card">
-                    <img src="images/lillian.jpg" alt="" />
-
-                    <div class="overlay">
-                      <h4>Lilian Chidinma</h4>
-                      <p>Human Resource Manager</p>
-                      <div class="social-icons mt-3">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                      </div>
-                    </div>
-                  </div>
+            <div class="team-card">
+              <img src="images/adesina.png" />
+              <div class="overlay">
+                <h4>Adesina M. Mustapha Esq.</h4>
+                <div class="social-icons mt-3">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                  <div class="hover-card">
-                    <img src="images/tomiwa.jpg" alt="" />
+              </div>
+            </div>
 
-                    <div class="overlay">
-                      <h4>Tomiwa Ajibona</h4>
-                      <p>Admin Officer</p>
-                      <div class="social-icons mt-3">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                      </div>
-                    </div>
-                  </div>
+            <div class="team-card">
+              <img src="images/moyosola.jpg" />
+              <div class="overlay">
+                <h4>Moyosola Fajana</h4>
+                <p>Associate</p>
+                <div class="social-icons mt-3">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/qayyum.jpg" />
+              <div class="overlay">
+                <h4>Qayyum Abdulsalam</h4>
+                <p>Associate</p>
+                <div class="social-icons mt-3">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/lillian.jpg" />
+              <div class="overlay">
+                <h4>Lilian Chidinma</h4>
+                <p>Human Resource Manager</p>
+                <div class="social-icons mt-3">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/tomiwa.jpg" />
+              <div class="overlay">
+                <h4>Tomiwa Ajibona</h4>
+                <p>Admin Officer</p>
+                <div class="social-icons mt-3">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -374,5 +345,6 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="carousel.js"></script>
   </body>
 </html>
