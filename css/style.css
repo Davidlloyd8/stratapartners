@@ -127,9 +127,6 @@
 .news-track {
   display: flex;
   width: max-content;
-  /* white-space: nowrap;
-  gap: 50px;
-  padding-left: 30px; */
   animation: scrollNews 20s linear infinite;
 }
 /* Content group */
