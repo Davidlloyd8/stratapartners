@@ -22,7 +22,7 @@ try {
     $mail->Host = 'smtp.hostinger.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'noreply@stratapartnersng.com';
-    $mail->Password = 'Champ850@';
+    $mail->Password = '*****';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = 465;
 
