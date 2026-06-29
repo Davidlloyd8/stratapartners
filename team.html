@@ -70,19 +70,11 @@
 
           <!-- ARROWS -->
           <div class="carousel-buttons">
-            <button
-              class="custom-btn"
-              type="button"
-              id="prevBtn"
-            >
+            <button class="custom-btn" type="button" id="prevBtn">
               <i class="bi bi-arrow-left"></i>
             </button>
 
-            <button
-              class="custom-btn"
-              type="button"
-              id="nextBtn"
-            >
+            <button class="custom-btn" type="button" id="nextBtn">
               <i class="bi bi-arrow-right"></i>
             </button>
           </div>
@@ -92,11 +84,29 @@
         <div class="carousel-wrapper">
           <div class="carousel-track" id="carouselTrack">
             <!-- CARD -->
-            <div class="team-card">
+            <div
+              class="team-card"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
               <img src="images/ope.jpeg" />
               <div class="overlay">
                 <h4>Ope Olatinwo</h4>
                 <p>Managing Partner of Strata Partners</p>
+                <div class="social-icons mt-3">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="images/DSC_0648.jpg" />
+              <div class="overlay">
+                <h4>Chimin David Aondoniyya</h4>
+                <p>Litigation Executive</p>
                 <div class="social-icons mt-3">
                   <a href="#"><i class="bi bi-facebook"></i></a>
                   <a href="#"><i class="bi bi-instagram"></i></a>
@@ -119,7 +129,11 @@
               </div>
             </div>
 
-            <div class="team-card">
+            <div
+              class="team-card"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal1"
+            >
               <img src="images/deborah.jpg" />
               <div class="overlay">
                 <h4>Deborah Lafuah-James</h4>
@@ -146,7 +160,11 @@
               </div>
             </div>
 
-            <div class="team-card">
+            <div
+              class="team-card"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal2"
+            >
               <img src="images/moyosola.jpg" />
               <div class="overlay">
                 <h4>Moyosola Fajana</h4>
@@ -327,6 +345,229 @@
       </div>
     </div>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      tabindex="-1"
+      id="exampleModal"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row p-4">
+              <div class="col-lg-4">
+                <img src="images/ope.jpeg" alt="" class="img-fluid rounded" />
+              </div>
+              <div class="col-lg-8">
+                <h4 class="fw-bold">Ope Olatinwo</h4>
+                <p class="small text-muted mb-3">
+                  Managing Partner of Strata Partners
+                </p>
+                <p>
+                  Ope Olatinwo is the Managing Partner of Strata Partners. He is
+                  a commercially astute legal practitioner, dealmaker, and
+                  strategist with a strong blend of advisory, transactional, and
+                  dispute-resolution experience. He is particularly known for
+                  structuring and negotiating complex transactions and for
+                  delivering pragmatic legal solutions that align with clients'
+                  commercial objectives.
+                </p>
+                <p>
+                  He obtained his Bachelor's degree from the University of
+                  Ilorin and proceeded to the Nigerian Law School, where he was
+                  duly called to the Nigerian Bar. Upon his call, Ope commenced
+                  his professional career at Paul Usoro & Co., where he gained
+                  exposure to top-tier legal practice, including high-value
+                  corporate advisory, regulatory compliance, and complex
+                  commercial disputes.
+                </p>
+                <p>
+                  Over the years, Ope has advised a wide range of corporate
+                  entities and private clients on investment structuring,
+                  mergers and acquisitions, joint ventures, real estate and
+                  infrastructure transactions, regulatory compliance, and
+                  cross-border commercial arrangements. He has led and supported
+                  negotiations on several high-stakes transactions, bringing a
+                  strategic and solution-driven approach that balances legal
+                  risk with commercial realities.
+                </p>
+                <p>
+                  In addition to his transactional practice, Ope has substantial
+                  litigation experience and has represented clients before
+                  various courts and tribunals across Nigeria, including the
+                  Federal High Court, the National Industrial Court, and other
+                  Superior Courts of Record. His litigation practice spans
+                  commercial disputes, labour and employment matters,
+                  contractual claims, and regulatory enforcement actions. He is
+                  particularly skilled in deploying litigation as a strategic
+                  tool in support of broader commercial outcomes.
+                </p>
+                <p>
+                  As Managing Partner, Ope provides the Firm's strategic
+                  leadership, overseeing its corporate, commercial, and
+                  dispute-resolution practices. He is deeply involved in client
+                  matters and is recognised for his analytical depth,
+                  negotiation acumen, and ability to craft tailored legal
+                  strategies that protect value, close deals, and resolve
+                  disputes efficiently. Under his leadership, Strata Partners
+                  continues to position itself as a trusted legal and commercial
+                  advisory firm.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      tabindex="-1"
+      id="exampleModal1"
+      aria-labelledby="exampleModalLabel1"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row p-4">
+              <div class="col-lg-4">
+                <img
+                  src="images/deborah.jpg"
+                  alt=""
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="col-lg-8">
+                <h4 class="fw-bold">Deborah Lafuah-James</h4>
+                <p class="small text-muted mb-3">Senior Asscociate</p>
+                <p>
+                  Deborah Lafua James is a dedicated member of our legal team,
+                  bringing a strong background in corporate advisory work,
+                  litigation, and regulatory compliance. At the firm, she works
+                  closely with clients to provide clear, practical guidance on
+                  complex legal matters, from contract negotiations to dispute
+                  resolution.
+                </p>
+                <p>
+                  Deborah is known for her meticulous approach to legal research
+                  and her ability to craft strategies that align with both
+                  client objectives and the demands of the law. She has
+                  contributed to high-stakes cases alongside senior partners,
+                  helping secure favourable outcomes through careful preparation
+                  and effective advocacy. Her practice extends beyond the
+                  courtroom, Deborah regularly advises businesses on governance
+                  and compliance, ensuring they remain confident in navigating
+                  regulatory frameworks. Clients value her professionalism,
+                  responsiveness, and commitment to protecting their interests.
+                  Deborah's work reflects not only her legal expertise but also
+                  her dedication to building lasting client relationships and
+                  supporting the firm's reputation for excellence.
+                </p>
+                <p>
+                  ACADEMIC BACKGROUND <br />
+                  L.L.B Ambrose Alli University, Ekpoma B.L Law school Abuja
+                </p>
+                <p>
+                  MEMBERSHIP <br />
+                  Member, Nigerian Bar Association
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      tabindex="-1"
+      id="exampleModal2"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row p-4">
+              <div class="col-lg-4">
+                <img
+                  src="images/moyosola.jpg"
+                  alt=""
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="col-lg-8">
+                <h4 class="fw-bold">Moyosola Fajana</h4>
+                <p class="small text-muted mb-3">Associate</p>
+                <p>
+                  Moyosola Fajana is an accomplished Associate Attorney who
+                  brings a balanced mix of legal expertise and client-centered
+                  service to the firm. Her practice spans corporate advisory,
+                  contract negotiation, and dispute resolution, where she
+                  consistently delivers thoughtful and practical solutions.
+                </p>
+                <p>
+                  She is recognized for her analytical approach to complex
+                  matters, conducting thorough legal research and developing
+                  strategies that align with both client objectives and
+                  regulatory requirements. Moyosola has contributed to
+                  significant cases alongside senior colleagues, supporting
+                  negotiations and litigation that have resulted in favorable
+                  outcomes. Beyond her technical skills, Moyosola is valued for
+                  her clear communication and ability to build strong client
+                  relationships. Whether advising businesses on compliance or
+                  guiding individuals through legal challenges, she demonstrates
+                  professionalism, diligence, and a commitment to protecting
+                  client interests.
+                </p>
+                <p>
+                  ACADEMIC BACKGROUND <br />
+                  L.L.B Obafemi Awolowo University (OAU) <br />
+                  B.L Law School, Abuja
+                </p>
+                <p>MEMBERSHIP <br> Member, Nigerian Bar Association</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Modal -->
+
     <!-- Include the footer -->
     <div class="footerContainer"></div>
     <script>
@@ -344,7 +585,7 @@
         });
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
