@@ -1,12 +1,13 @@
 
-document.getElementById("contactForm").addEventListener("submit", function(e){
+const form = document.getElementById("contactForm")
+form.addEventListener("submit", function(e){
     e.preventDefault();
 
-    let formData = new FormData(this);
+    const formData = new FormData(form);
 
     fetch("sendmail.php", {
         method: "POST",
-        body: formData
+        body: formData,
     })
     .then(res => res.json())
     .then(data => {

@@ -12,7 +12,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("../images/about_bg.jpg") no-repeat center center/cover;
+  background: url("../images/DSC_0783.jpg") no-repeat center center/cover;
   transform: scaleX(-1);
   z-index: -2;
 }
@@ -75,6 +75,7 @@
   background-color: #fff;
   border: 0px solid transparent;
   border-radius: 15px;
+  height: 100%;
 }
 .about-card-muted {
   background-color: rgba(0, 102, 255, 0.05);

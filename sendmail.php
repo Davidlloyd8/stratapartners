@@ -1,14 +1,17 @@
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 
-header('Content-Type: application/json');
+//header('Content-Type: application/json');
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
+$name = htmlspecialchars($_POST['fullname']);
+$email = htmlspecialchars($_POST['email']);
+$message = htmlspecialchars($_POST['message']);
 
 $mail = new PHPMailer(true);
 
@@ -16,16 +19,17 @@ try {
 
     // SMTP SETTINGS (example: Gmail)
     $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
+    $mail->Host = 'smtp.hostinger.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'stratapartners@gmail.com';   // your email
-    $mail->Password = 'your_app_password';     // Gmail App Password
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 587;
+    $mail->Username = 'noreply@stratapartnersng.com';
+    $mail->Password = 'Champ850@';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail->Port = 465;
 
     // SENDER & RECEIVER
-    $mail->setFrom($email, $name);
-    $mail->addAddress('stratapartners@gmail.com'); // receiver email
+    $mail->setFrom('noreply@stratapartnersng.com', 'Strata Partners');
+    $mail->addAddress('extendavidba4@gmail.com', 'Strata Partners Consumer Message');
+    $mail->addReplyTo($email, $name);
 
     // CONTENT
     $mail->isHTML(true);
@@ -37,11 +41,24 @@ try {
         <p><b>Message:</b><br>$message</p>
     ";
 
+    //     $mail->send();
+
+    //     echo "success";
+    // } catch (Exception $e) {
+    //     echo "Mailer Error: " . $mail->ErrorInfo;
+    // }
     $mail->send();
 
-    echo json_encode(["status" => "success"]);
-
+    echo json_encode([
+        "status" => "success"
+    ]);
+    exit;
 } catch (Exception $e) {
-    echo json_encode(["status" => "error", "message" => $mail->ErrorInfo]);
+    http_response_code(500);
+
+    echo json_encode([
+        "status" => "error",
+        "message" => $mail->ErrorInfo
+    ]);
+    exit;
 }
-?>
