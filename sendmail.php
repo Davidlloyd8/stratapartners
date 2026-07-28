@@ -21,14 +21,14 @@ try {
     $mail->isSMTP();
     $mail->Host = 'smtp.hostinger.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'noreply@stratapartnersng.com';
+    $mail->Username = 'info@stratapartnersng.com';
     $mail->Password = '*****';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = 465;
 
     // SENDER & RECEIVER
-    $mail->setFrom('noreply@stratapartnersng.com', 'Strata Partners');
-    $mail->addAddress('extendavidba4@gmail.com', 'Strata Partners Consumer Message');
+    $mail->setFrom('info@stratapartnersng.com', 'Strata Partners');
+    $mail->addAddress('info@stratapartnersng.com', 'Strata Partners Consumer Message');
     $mail->addReplyTo($email, $name);
 
     // CONTENT

@@ -5,6 +5,7 @@
   position: relative;
   color: white;
   background: url("../images/contact_bg.jpg") no-repeat center center/cover;
+  padding: 8%;
 }
 
 /* dark overlay for readability */
@@ -153,6 +154,9 @@ textarea.form-control {
   .title {
     font-size: 2.2rem;
   }
+  /* .hero-section {
+    padding: 5%;
+  } */
 }
 
 @media (max-width: 768px) {
@@ -160,9 +164,9 @@ textarea.form-control {
     font-size: 30px;
   }
 
-  .hero-content {
+  /* .hero-content {
     text-align: center;
-  }
+  } */
 
   .btn-group-custom {
     justify-content: center;

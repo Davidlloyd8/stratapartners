@@ -6,6 +6,7 @@
   color: white;
   background: url("../images/DSC_0787.jpg") no-repeat center
     center/cover;
+    padding: 8%;
 }
 
 /* dark overlay for readability */
@@ -38,7 +39,7 @@
 
 /* main heading */
 .hero-title {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 600;
   line-height: 1.2;
 }
